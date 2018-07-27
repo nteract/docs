@@ -2,7 +2,7 @@ baseURL = "/"
 
 languageCode = "en-us"
 DefaultContentLanguage = "en"
-title = "nteract User Guide"
+title = "nteract Documentation"
 theme = "docdock"
 themesdir = "themes"
 pygmentsCodeFences = true
@@ -55,11 +55,11 @@ weight = 11
 
 [[menu.shortcuts]]
 name = "<i class='fa fa-bookmark'></i> <label>nteract Site</label>"
-identifier = "hugodoc"
+identifier = "nteractsite"
 url = "https://nteract.io/"
 weight = 20
 
 [[menu.shortcuts]]
 name = "<i class='fa fa-bullhorn'></i> <label>Credits</label>"
-url = "/credits"
+url = "https://nteract.io/about"
 weight = 30
