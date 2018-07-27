@@ -1,8 +1,8 @@
 +++
 title = "Documentation Style Guide"
 description = ""
-weight = 52
-alwaysopen = true
+hidden = true
+weight = 2
 +++
 
 ## Markup Language

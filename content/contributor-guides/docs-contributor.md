@@ -1,8 +1,8 @@
 +++
 title = "Documentation Contributor Guide"
-description = ""
-weight = 51
-alwaysopen = true
+description = "Learn how nteract works and how to contribute documentation."
+hidden = true
+weight = 1
 +++
 
 ## Welcome documentarians

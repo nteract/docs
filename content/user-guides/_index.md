@@ -1,6 +1,6 @@
 +++
 title = "User Guides"
-description = ""
+description = "Documents that help you get things done. 'How to' guides on a variety of topics."
 weight = 30
 alwaysopen = true
 +++

@@ -1,6 +1,6 @@
 +++
 title = "Installation Guides"
-description = ""
+description = "Instructions for different systems and programming languages."
 weight = 10
 alwaysopen = true
 +++
