@@ -1,6 +1,6 @@
 +++
-title = "Concepts"
-description = "Documents that help you understand high level concepts about nteract."
+title = "Planning"
+description = "Planning documents for future."
 weight = 80
 alwaysopen = true
 +++
