@@ -1,6 +1,6 @@
 +++
-title = "Version control"
-description = "Planning for version control"
+title = "Version control workflow"
+description = "Planning for version control workflow"
 hidden = true
 weight = 2
 +++
@@ -18,3 +18,12 @@ notebook, you copy the notebook and place the copy at the HEAD.
 
 "Schedule" button launches creation of a YAML file with the schedulable
 template (notebook parameters) and job parameters.
+
+## Visuals
+
+
+![workflow left](/images/workflow-left.png)
+
+![workflow right top](/images/workflow-center-top.png)
+
+![workflow right bottom](/images/workflow-center-bottom.png)
