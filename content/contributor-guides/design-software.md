@@ -1,7 +1,8 @@
 +++
-title = "Design: Documenting Software Design Decisions"
+title = "Design: Documenting Decisions"
 description = "Documentation for developers and designers when planning new features and functionality."
-hidden = true
+hidden = false
+alwaysopen = true
 weight = 3
 +++
 

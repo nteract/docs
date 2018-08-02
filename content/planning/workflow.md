@@ -1,7 +1,7 @@
 +++
-title = "Overview of Workflow: Creation, Scheduling, Execution, Sharing"
-description = "Planning document."
-hidden = true
+title = "Workflow Overview"
+description = "Planning document for end to end workflow"
+hidden = false
 weight = 1
 +++
   

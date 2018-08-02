@@ -1,7 +1,8 @@
 +++
-title = "Documentation Contributor Guide"
+title = "Documentation: How to Contribute"
 description = "Learn how nteract works and how to contribute documentation."
-hidden = true
+hidden = false
+alwaysopen = true
 weight = 1
 +++
 
