@@ -7,4 +7,4 @@ alwaysopen = true
 
 Planning documents
 
-{{% children  %}}
+{{% children showhidden="true" %}}
