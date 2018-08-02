@@ -1,7 +1,7 @@
 +++
 title = "Discovery of Published Notebooks"
 description = "Planning ideas for discovery of published notebooks."
-hidden = true
+hidden = false
 weight = 3
 +++
 

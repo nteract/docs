@@ -1,7 +1,8 @@
 +++
-title = "Documentation Style Guide"
+title = "Documentation: Style Guide"
 description = ""
-hidden = true
+hidden = false
+alwaysopen = true
 weight = 2
 +++
 

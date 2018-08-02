@@ -5,6 +5,5 @@ weight = 80
 alwaysopen = true
 +++
 
-Planning documents
 
-{{% children showhidden="true" %}}
+{{% children style="h2" description="true" showhidden="true" %}}

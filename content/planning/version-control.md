@@ -1,7 +1,7 @@
 +++
-title = "Version control workflow"
+title = "Version Control Workflow"
 description = "Planning for version control workflow"
-hidden = true
+hidden = false
 weight = 2
 +++
 

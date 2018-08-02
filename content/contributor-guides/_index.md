@@ -5,6 +5,6 @@ weight = 50
 alwaysopen = true
 +++
 
-Welcome contributors.
+{{% notice theme="success" header="Welcome contributors." %}}
 
-{{% children showhidden="true" %}}
+{{% children style="h2" description="true" showhidden="true" %}}
