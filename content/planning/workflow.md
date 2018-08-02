@@ -1,6 +1,6 @@
 +++
-title = "Workflow"
-description = "Planning document for future workflows."
+title = "Overview of Workflow: Creation, Scheduling, Execution, Sharing"
+description = "Planning document."
 hidden = true
 weight = 1
 +++
@@ -35,3 +35,10 @@ The output of Papermill will be stored in S3 or another specified storee.
 
 - Clone the Notebook
 - Resubmit a Scheduled Template
+
+
+## UI: Scheduling
+
+![UI one](/images/ui-1.png)
+
+![UI two](/images/ui-2.png)

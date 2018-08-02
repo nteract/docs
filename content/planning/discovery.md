@@ -1,11 +1,9 @@
 +++
-title = "Dicovery"
-description = "Planning ideas for discovery of notebooks."
+title = "Discovery of Published Notebooks"
+description = "Planning ideas for discovery of published notebooks."
 hidden = true
 weight = 3
 +++
-
-# Discovery Ideas and Planning
 
 ## What is Discovery?
 
@@ -23,4 +21,3 @@ When a notebook is shared, it is stored and indexed.
 Elasticsearch can be used for the indexing and search.
 
 GraphQL and React can be used for the Front End.
-
