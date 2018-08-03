@@ -1,7 +1,6 @@
 ---
-id: doc-deploy
+id: docs-deploy
 title: Documentation: Build and Deploy
-sidebar_label: contributing
 ---
 
 ## Build

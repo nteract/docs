@@ -1,7 +1,6 @@
 ---
-id: design-doc-decisions
+id: design-software
 title: Design: Documenting Decisions
-sidebar_label: contributing
 ---
 
 ## Articles

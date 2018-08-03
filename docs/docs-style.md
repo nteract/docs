@@ -1,7 +1,6 @@
 ---
-id: doc-style
+id: docs-style
 title: Documentation: Style Guide
-sidebar_label: contributing
 ---
 
 ## Markup Language
@@ -10,8 +9,5 @@ sidebar_label: contributing
 
 ## Documentation Tool
 
-[Hugo](https://gohugo.io/)
+[docusaurus](https://docusaurus.io/)
 
-## Theme
-
-[DocDock](http://docdock.netlify.com/)

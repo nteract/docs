@@ -1,6 +1,6 @@
 ---
+id: discovery
 title: Discovery of Published Notebooks
-
 ---
 
 ## What is Discovery?
