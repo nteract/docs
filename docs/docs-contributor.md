@@ -26,21 +26,19 @@ documentation.
 
 1. There are two main directories: `docs` and `website`.
 2. Change directory to `docs`. `docs` contains all of the documentation source
-   in Markdown format. If you are adding a new file, make sure it has a *title header*
-   similar to this:
+   in Markdown format. If you are adding a new file, named `style-guide.md`, 
+   make sure it has a *title header* similar to this:
    ```
    ---
-   title: Documentation: How to Contribute
+   id: style-guide
+   title: Style Guide
 
    ---
    ```
 
-1. On a Mac, you can `brew install hugo`. On other systems, please follow the
-hugo installation steps.
+3. To add the document to the site's sidebar menu, add the `id` in 
+   `website/sidebars.json`.
 
-2. Get the documentation source or update the source.
+4. To view your changes locally, change into the `website` directory. Run
+   `yarn build start`. This will open a page in your web browser.
 
-3. From the root of the repo, type `hugo server` to build and serve the docs
-   locally
-
-4. Navigate to `localhost:1313`
