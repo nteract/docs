@@ -22,7 +22,6 @@ const users = [
 
 const siteConfig = {
   title: 'Documentation' /* title for your website */,
-  title: 'Documentation' /* title for your website */,
   tagline: 'nteract and you',
   url: 'https://docs.nteract.io' /* your website url */,
   baseUrl: '/' /* base url for your project */,
