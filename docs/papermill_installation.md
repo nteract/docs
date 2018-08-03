@@ -1,4 +1,9 @@
-Installation
+---
+id: papermill-installation
+title: Installation 
+---
+
+Papermill Installation
 ============
 
 Installing the application
