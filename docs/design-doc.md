@@ -86,7 +86,6 @@ type core = {
       error: ?Object
     },
     
-    // TODO: what's this doing again?
     hostSpec: {
       loading: boolean,
       error: ?Object
