@@ -1,10 +1,7 @@
 ---
 id: intro-kernels
-title: Introducing Kernels 
+title: Introducing Kernels
 ---
-
-
-# Introducing Kernels
 
  Kernels are tools to run code. Kernels receive messages from the front end that contain a user's code and execute the code.  The kernel then sends messages that contain the result of the executed code back to the front end.  Messages are formatted as JSONs and sent using [ZeroMQ](http://zguide.zeromq.org/page:all#ZeroMQ-in-a-Hundred-Words).
 

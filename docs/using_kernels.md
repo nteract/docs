@@ -1,9 +1,7 @@
 ---
 id: using-kernels
-title: Using Kernels 
+title: Using Kernels
 ---
-
-# Using Kernels
 
 Kernels are installed either by installing the kernel directly or adding the
 kernel with [ipykernel](https://github.com/ipython/ipykernel).  Many [community-developed](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels) kernels will include installation instructions in their README.md. Kernels are managed with ipykernel.
