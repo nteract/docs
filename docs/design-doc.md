@@ -176,9 +176,6 @@ type core = {
     },
 
     hostSpec: {
-      // TODO: is this something that's going to be hard-coded into an app? Or,
-      // is it something that we'll indeed need to request from some api? See
-      // related hostSpec in the `communication` state hunk.
 
       // Else, should this be sorta top-level alongside the `notebook` hunk
       // of state?
@@ -219,7 +216,6 @@ type core = {
           serverUrl: string,
           crossDomain: boolean,
           
-          // TODO: I think we're attempting to split apart host and document.
           //   1. what was the purpose of this?
           //   2. can it be provided in some other way?
           rootContentRef: Ref,
@@ -253,7 +249,7 @@ type core = {
         [ref: Ref]: {
           id: Id,
           name: string, // This is just a display name.
-          type: string, // TODO: this should be an enum.
+          type: string,
           kernelRef: Ref
         }
       },
@@ -291,7 +287,6 @@ type core = {
       byRef: {
         [ref: Ref]: {
           message: string,
-          // TODO: Figure out our structure here
         },
       refs: Array<Ref>
       }
