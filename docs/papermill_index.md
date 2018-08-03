@@ -1,4 +1,9 @@
-Welcome to papermill
+---
+id: papermill-introduction
+title: Introduction 
+---
+
+Welcome to Papermill
 ====================
 
 [![image](https://travis-ci.org/nteract/papermill.svg?branch=master)](https://travis-ci.org/nteract/papermill)
