@@ -1,7 +1,6 @@
 ---
-id: planning-discovery
+id: discovery
 title: Discovery of Published Notebooks
-sidebar_label: planning
 ---
 
 ## What is Discovery?

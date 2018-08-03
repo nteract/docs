@@ -4,15 +4,16 @@
       "installation"
     ],
     "Components": [
-      "components"
+      "components-nteract"
     ],
     "Concepts": [
       "concepts"
     ],
     "Contributing": [
-      "design-doc-decisions",
-      "doc-contributing",
-      "doc-style"
+      "design-software",
+      "docs-contributor",
+      "docs-style",
+      "docs-deploy"
     ]
   }
 }

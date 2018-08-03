@@ -1,7 +1,6 @@
 ---
-id: doc-contributing
+id: docs-contributor
 title: Documentation: How to Contribute
-sidebar_label: contributing
 ---
 
 ## Welcome documentarians
@@ -22,7 +21,19 @@ It's ok if we're not sure of the organization at first. We want to get started o
 
 ### Building docs locally
 
-Initially, we will be using Hugo and its docdock theme as a git submodule.
+We use [docusaurus](https://docusaurus.io/) for structuring and building our
+documentation.
+
+1. There are two main directories: `docs` and `website`.
+2. Change directory to `docs`. `docs` contains all of the documentation source
+   in Markdown format. If you are adding a new file, make sure it has a *title header*
+   similar to this:
+   ```
+   ---
+   title: Documentation: How to Contribute
+
+   ---
+   ```
 
 1. On a Mac, you can `brew install hugo`. On other systems, please follow the
 hugo installation steps.

@@ -1,7 +1,6 @@
 ---
 id: planning-workflow
 title: Workflow Overview
-sidebar_label: planning
 ---
 
 ## Creation of a Notebook

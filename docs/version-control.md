@@ -1,7 +1,6 @@
 ---
 id: planning-version
 title: Version Control Workflow
-sidebar_label: planning
 ---
 
 ## Invariants
