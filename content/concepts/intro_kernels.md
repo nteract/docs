@@ -6,7 +6,7 @@
 
 
  IPython provides wrappers to execute code that
- have been used to develop kernels across [over 100 languages](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels). Notable examples of community-developed kernels include [xeus for C++](https://github.com/QuantStack/xeus-cling), [IJavascript](https://github.com/n-riesco/ijavascript), [IHaskell](https://github.com/gibiansky/IHaskell), [Igo](https://github.com/yunabe/lgo), [IJulia](https://github.com/JuliaLang/IJulia.jl), [IRKernel](https://github.com/IRkernel/IRkernel), [BeakerX for JVM languages](https://github.com/twosigma/beakerx), and [Calysto for Octave](https://github.com/Calysto/octave_kernel).
+ have been used to develop kernels across [over 100 languages](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels). Notable examples of community-developed kernels include [xeus for C++](https://github.com/QuantStack/xeus-cling), [IJavascript](https://github.com/n-riesco/ijavascript), [IHaskell](https://github.com/gibiansky/IHaskell), [Igo](https://github.com/yunabe/lgo), [IJulia](https://github.com/JuliaLang/IJulia.jl), [IRKernel](https://github.com/IRkernel/IRkernel), and [Calysto for Octave](https://github.com/Calysto/octave_kernel).
 
  To learn more about creating your own Jupyter Kernel, you may learn more at [Making Kernels for Jupyter](http://jupyter-client.readthedocs.io/en/latest/kernels.html).  An simple example kernel
  is at [dsblank/simple_kernel](https://github.com/dsblank/simple_kernel) on GitHub.
