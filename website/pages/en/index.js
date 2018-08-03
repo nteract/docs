@@ -109,7 +109,7 @@ const Features = props => (
         title: 'nteract on the Desktop',
       },
       {
-        content: 'Install nteract's jupyter extension',
+        content: "Install nteract's jupyter extension",
         image: imgUrl('nteract_logo_compact_clear_space_purple.svg'),
         imageAlign: 'top',
         title: 'Use nteract on the Web',
