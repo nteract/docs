@@ -103,16 +103,16 @@ const Features = props => (
   <Block layout="fourColumn">
     {[
       {
-        content: 'This is the content of my feature',
-        image: imgUrl('nteract_logo_compact_clear_space_red.svg'),
+        content: 'Install nteract',
+        image: imgUrl('nteract_logo_compact_clear_space_blue.svg'),
         imageAlign: 'top',
-        title: 'Feature One',
+        title: 'nteract on the Desktop',
       },
       {
-        content: 'The content of my second feature',
-        image: imgUrl('nteract_logo_compact_clear_space_red.svg'),
+        content: 'Install nteract's jupyter extension',
+        image: imgUrl('nteract_logo_compact_clear_space_purple.svg'),
         imageAlign: 'top',
-        title: 'Feature Two',
+        title: 'Use nteract on the Web',
       },
     ]}
   </Block>
