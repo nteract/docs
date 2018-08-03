@@ -1,7 +1,6 @@
 ---
-id: components
+id: components-nteract
 title: Component Guides
-sidebar_label: components
 ---
 
-[Components Documentation](https://components.nteract.io)
+[nteract Components](https://components.nteract.io)

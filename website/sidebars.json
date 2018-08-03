@@ -4,7 +4,7 @@
       "installation"
     ],
     "Components": [
-      "components"
+      "components-nteract"
     ],
     "Concepts": [
       "concepts"
@@ -12,7 +12,8 @@
     "Contributing": [
       "design-doc-decisions",
       "doc-contributing",
-      "doc-style"
+      "doc-style",
+      "doc-deploy"
     ]
   }
 }
