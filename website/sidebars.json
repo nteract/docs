@@ -10,10 +10,10 @@
       "concepts"
     ],
     "Contributing": [
-      "design-doc-decisions",
-      "doc-contributing",
-      "doc-style",
-      "doc-deploy"
+      "design-software",
+      "docs-contributor",
+      "docs-style",
+      "docs-deploy"
     ]
   }
 }
