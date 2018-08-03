@@ -1,0 +1,18 @@
+{
+  "docs": {
+    "Installation": [
+      "installation"
+    ],
+    "Components": [
+      "components"
+    ],
+    "Concepts": [
+      "concepts"
+    ],
+    "Contributing": [
+      "design-doc-decisions",
+      "doc-contributing",
+      "doc-style"
+    ]
+  }
+}
