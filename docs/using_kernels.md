@@ -1,3 +1,8 @@
+---
+id: using-kernels
+title: Using Kernels 
+---
+
 # Using Kernels
 
 Kernels are installed either by installing the kernel directly or adding the
@@ -25,7 +30,7 @@ Python environments are manually added through ipykernel. To add a Python
 environment, ipykernel must be installed in the environment. To add a kernel
 with ipykernel that is made with a configuration file, e.g. `requirements.txt`
 or `environment.yml`, you will need to install ipykernel into the environment
-and install the kernel while the environment is activated. 
+and install the kernel while the environment is activated.
 
 
 Using pip:
