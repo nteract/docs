@@ -40,5 +40,5 @@ documentation.
    `website/sidebars.json`.
 
 4. To view your changes locally, change into the `website` directory. Run
-   `yarn build start`. This will open a page in your web browser.
+   `yarn install` and `yarn run start`. This will open a page in your web browser.
 
