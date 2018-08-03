@@ -7,7 +7,8 @@
       "components-nteract"
     ],
     "Concepts": [
-      "concepts"
+      "intro-kernels",
+      "using-kernels"
     ],
     "Contributing": [
       "design-software",
