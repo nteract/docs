@@ -40,6 +40,7 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     { doc: 'installation', label: 'Docs' },
+    { href: 'https://components.nteract.io', label: 'Components'},
     { href: 'https://github.com/nteract/user-guide', label: 'GitHub' }
   ],
 
