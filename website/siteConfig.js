@@ -49,9 +49,9 @@ const siteConfig = {
   users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/nteract_logo_compact_clear_space_red_inverted.svg',
-  footerIcon: 'img/nteract_logo_compact_clear_space_red_inverted.svg',
-  favicon: 'img/favicon.png',
+  headerIcon: 'img/nteract_logo_app_icon_red.png',
+  footerIcon: 'img/nteract_logo_app_icon_red.png',
+  favicon: 'img/favicon-32x32.png',
 
   /* colors for website */
   colors: {
@@ -89,8 +89,8 @@ const siteConfig = {
   onPageNav: 'separate',
 
   /* Open Graph and Twitter card images */
-  ogImage: 'img/docusaurus.png',
-  twitterImage: 'img/docusaurus.png',
+  ogImage: 'img/nteract_logo_app_icon_red.png',
+  twitterImage: 'img/nteract_logo_app_icon_red.png',
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
