@@ -76,7 +76,7 @@ class HomeSplash extends React.Component {
     let language = this.props.language || '';
     return (
       <SplashContainer>
-        <Logo img_src={imgUrl('nteract_logo_app_icon_red.ppng')} />
+        <Logo img_src={imgUrl('nteract_logo_app_icon_red.png')} />
         <div className="inner">
           <ProjectTitle />
           <PromoSection>
