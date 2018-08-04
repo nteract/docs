@@ -78,11 +78,15 @@ const siteConfig = {
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks
-    theme: 'default',
+    theme: "default",
   },
 
   // Add custom scripts here that would be placed in <script> tags
-  scripts: ['https://buttons.github.io/buttons.js'],
+  scripts: [
+    "https://buttons.github.io/buttons.js",
+    "https://unpkg.com/clipboard@2.0.0/dist/clipboard.min.js",
+    "/js/code-blocks-buttons.js",
+  ],
 
   /* On page navigation for the current documentation page */
   onPageNav: 'separate',

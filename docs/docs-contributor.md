@@ -7,7 +7,7 @@ title: Documentation: How to Contribute
 
 We're glad you are here. Excellent documentation empowers users and contributors.
 
-### Contributing content
+## Contributing content
 
 When adding information to the contents directory, the contents directory should
 include:
@@ -19,7 +19,7 @@ include:
 
 It's ok if we're not sure of the organization at first. We want to get started on writing together first and foremost. If you are doing an example with multiple files, please make a folder.
 
-### Building docs locally
+## Building docs locally
 
 We use [docusaurus](https://docusaurus.io/) for structuring and building our
 documentation.
@@ -28,11 +28,11 @@ documentation.
 2. Change directory to `docs`. `docs` contains all of the documentation source
    in Markdown format. If you are adding a new file, named `style-guide.md`, 
    make sure it has a *title header* similar to this:
-   ```
+
+   ```txt
    ---
    id: style-guide
    title: Style Guide
-
    ---
    ```
 
