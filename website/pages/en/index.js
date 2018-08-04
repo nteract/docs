@@ -76,7 +76,7 @@ class HomeSplash extends React.Component {
     let language = this.props.language || '';
     return (
       <SplashContainer>
-        <Logo img_src={imgUrl('nteract_logo_compact_clear_space_red.svg')} />
+        <Logo img_src={imgUrl('nteract_logo_app_icon_red.ppng')} />
         <div className="inner">
           <ProjectTitle />
           <PromoSection>
@@ -104,13 +104,13 @@ const Features = props => (
     {[
       {
         content: 'Install nteract',
-        image: imgUrl('nteract_logo_compact_clear_space_blue.svg'),
+        image: imgUrl('nteract_logo_app_icon_blue.png'),
         imageAlign: 'top',
         title: 'nteract on the Desktop',
       },
       {
         content: "Install nteract's jupyter extension",
-        image: imgUrl('nteract_logo_compact_clear_space_purple.svg'),
+        image: imgUrl('nteract_logo_app_icon_purple.png'),
         imageAlign: 'top',
         title: 'Use nteract on the Web',
       },
@@ -122,8 +122,8 @@ const FeatureCallout = props => (
   <div
     className="productShowcaseSection paddingBottom"
     style={{textAlign: 'center'}}>
-    <h2>Feature Callout</h2>
-    <MarkdownBlock>These are features of this project</MarkdownBlock>
+    <h2>nteract Features</h2>
+    <MarkdownBlock>Modern open source React components designed by the nteract team and optimized for interactive user friendly workflows</MarkdownBlock>
   </div>
 );
 
@@ -131,8 +131,8 @@ const LearnHow = props => (
   <Block background="light">
     {[
       {
-        content: 'Talk about learning how to use this',
-        image: imgUrl('nteract_logo_compact_clear_space_red.svg'),
+        content: 'Learn how to use nteract and papermill',
+        image: imgUrl('nteract_logo_app_icon_purple.png'),
         imageAlign: 'right',
         title: 'Learn How',
       },
@@ -144,8 +144,8 @@ const TryOut = props => (
   <Block id="try">
     {[
       {
-        content: 'Talk about trying this out',
-        image: imgUrl('nteract_logo_compact_clear_space_red.svg'),
+        content: 'Talk to us about trying them out',
+        image: imgUrl('nteract_logo_app_icon_red.png'),
         imageAlign: 'left',
         title: 'Try it Out',
       },
@@ -157,10 +157,10 @@ const Description = props => (
   <Block background="dark">
     {[
       {
-        content: 'This is another description of how this project is useful',
-        image: imgUrl('nteract_logo_compact_clear_space_red.svg'),
+        content: 'Use your data for decision making',
+        image: imgUrl('nteract_logo_app_icon_blue.png'),
         imageAlign: 'right',
-        title: 'Description',
+        title: 'Data = Decisions',
       },
     ]}
   </Block>
