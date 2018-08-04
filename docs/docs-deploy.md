@@ -11,7 +11,7 @@ title: Documentation: Build and Deploy
    provide a progress bar) since it is indexing all of the files for search.
    The output will look similar to this:
 
-   ```
+   ```bash
    $ yarn run build
      yarn run v1.9.2
      warning package.json: No license field
@@ -35,7 +35,8 @@ To deploy using [ZEIT `now`](https://zeit.co/docs):
 2. Change directory to `~/code/user-guide/website/build/docs-nteract`.
 3. Run `now`.
 4. You should see something similar to:
-    ```
+
+    ```bash
     $ now
     > Deploying ~/code/user-guide/website/build/docs-nteract under nteract
     > Synced 28 files (2.28MB) [4s]

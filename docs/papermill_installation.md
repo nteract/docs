@@ -1,22 +1,17 @@
 ---
 id: papermill-installation
-title: Installation 
+title: Papermill Installation 
 ---
 
-Papermill Installation
-============
-
-Installing the application
---------------------------
+## Installing the application
 
 From the command line:
 
-``` {.sourceCode .bash}
+```bash
 pip install papermill
 ```
 
-Installing In-Notebook bindings
--------------------------------
+## Installing In-Notebook bindings
 
 -   [Python](PythonBinding) (included in this repo)
 -   [R](https://github.com/nteract/papermillr) (available in the

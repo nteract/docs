@@ -3,14 +3,7 @@ id: papermill-introduction
 title: Introduction 
 ---
 
-Welcome to Papermill
-====================
-
-[![image](https://travis-ci.org/nteract/papermill.svg?branch=master)](https://travis-ci.org/nteract/papermill)
-
-[![image](https://codecov.io/github/nteract/papermill/coverage.svg?branch=master)](https://codecov.io/github/nteract/papermill?branch=master)
-
-[![image](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/nteract/papermill/master?filepath=papermill%2Ftests%2Fnotebooks%2Fbinder.ipynb)
+## What is Papermill?
 
 **Papermill** is a tool for parameterizing, executing, and analyzing
 Jupyter Notebooks.
@@ -20,6 +13,8 @@ Papermill lets you:
 -   **parameterize** notebooks
 -   **execute** and **collect** metrics across the notebooks
 -   **summarize collections** of notebooks
+
+## Uses for Papermill
 
 This opens up new opportunities for how notebooks can be used. For
 example:
@@ -36,14 +31,3 @@ example:
     notebooks? Now you can choose which plots to programmatically
     display a **summary** **collection** in a notebook to share with
     others.
-
-::: {.toctree}
-installation usage reference/modules.rst
-:::
-
-Indices and tables
-==================
-
--   [genindex]{role="ref"}
--   [modindex]{role="ref"}
--   [search]{role="ref"}
