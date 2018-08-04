@@ -8,6 +8,12 @@ title: Introduction
 **Papermill** is a tool for parameterizing, executing, and analyzing
 Jupyter Notebooks.
 
+## Try It
+
+[![image](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/nteract/papermill/master?filepath=papermill%2Ftests%2Fnotebooks%2Fbinder.ipynb)
+
+## Features
+
 Papermill lets you:
 
 -   **parameterize** notebooks
