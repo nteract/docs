@@ -9,11 +9,30 @@ We want you to succeed at the end of this tutorial. Here are some things you can
 1. Be sure you're familiar with the JavaScript programming language and the React framework. You can find some great resources to learn [JavaScript](https://github.com/micromata/awesome-javascript-learning) and [React](https://medium.freecodecamp.org/learning-react-roadmap-from-scratch-to-advanced-bff7735531b6).
 2. 
 
-If you've gotten up to this part of the tutorial and you're a little confused, you can post a question on our support forum to get help.
+If you've gotten up to this part of the tutorial and you're a little confused, you can post a question on [our support forum](https://spectrum.chat/nteract/help) to get help.
 
 If you feel ready to move forward, then let's go!
 
 # Body
+
+We’ll get started by setting up our codebase. 
+
+We’ll be building our own version of nteract play using Next.JS, Redux, and RxJS. These libraries are used frequently throughout the nteract codebase for a couple of reasons.
+
+Next.JS is a framework built of top of the React front-end library. It adds a couple of neat features to React like server-side rendering.
+
+Redux is a 
+
+```
+$ mkdir nteract-play && cd nteract-play
+$ npm init —yes
+```
+
+We've created a directory to store our code in. Now we'll need to install some of the basic tools that we mentioned above.
+
+```
+$ npm install --save next react react-dom
+```
 
 1. Installing and setting up Next.JS with nteract configuration.
 - What tools will we need and why.
