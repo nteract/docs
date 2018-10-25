@@ -8,12 +8,14 @@
 
 ## Task: Creating an issue for components documentation changes or enhancements
 
-## Task: Installing styleguidist tool
+This may move to a General Documentation Contribution Task.
 
-## Task: Documenting a new component
+## Task: Installing styleguidist tool
 
 ## Task: Building components documentation
 
 ## Task: Testing components documentation
 
 ## Task: Publishing the components documentation
+
+## Task: Documenting a new component

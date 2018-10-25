@@ -6,3 +6,6 @@
     * [Kernels and the Jupyter Messaging Protocol](concepts/kernels.md)
 * Desktop Application
     * [Shortcut Keys](desktop/shortcut-keys.md)
+* Documentation Contributor Guide
+    * [Overview](doc-contributor/overview.md)
+    * [Contributing Components Documentation](doc-contributor/createdoc-components.md)
