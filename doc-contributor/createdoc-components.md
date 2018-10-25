@@ -1,21 +1,21 @@
 # Contributing Components Documentation
 
-## Concept: What is nteract's components documentation?
+## Concepts
 
-## Concept: What tool is used to create components documentation?
+### Concept: Overview of Components Documentation
 
-## Concept: What and where are nteract components in the source code
+### Concept: Styleguidist Tool
 
-## Task: Creating an issue for components documentation changes or enhancements
+### Concept: Components and Source Code
 
-This may move to a General Documentation Contribution Task.
+## Tasks
 
-## Task: Installing styleguidist tool
+### Task: Installing styleguidist tool
 
-## Task: Building components documentation
+### Task: Building components documentation
 
-## Task: Testing components documentation
+### Task: Testing components documentation
 
-## Task: Publishing the components documentation
+### Task: Publishing the components documentation
 
-## Task: Documenting a new component
+### Task: Documenting a new component
