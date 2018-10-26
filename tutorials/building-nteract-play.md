@@ -34,6 +34,47 @@ We've created a directory to store our code in. Now we'll need to install some o
 $ npm install --save next react react-dom
 ```
 
+Now that we've got everything installed, we'll need to create some pages that we can view in our app. Let's start by creating a `pages/index.js` file that we will use to store the contents of our homepage.
+
+```
+$ mkdir pages
+$ touch pages/index.js
+```
+
+Inside the `index.js` file, we'll set up the basic scaffold of our homepage. We won't worry about making it pretty just yet, for now, we just want to get the ball rolling.
+
+```
+class Index extends React.Component {
+  render() {
+    return (
+      <header>
+        <h1>nteract play</h1>
+      </header>
+    );
+  }
+}
+
+export default Index;
+```
+
+Now we will need to run our application. Before we do this, we'll need to configure the npm scripts.
+
+```
+...
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+...
+```
+
+If we visit the webpage, we should see the following.
+
+![A screenshot of our application with the words nteract play in the top-left corner.](https://cldup.com/GbQ9kSJ1cY.png)
+
+For our next step, we are going to augment what we have here a little bit more. We'll do this in a couple of steps. First, we'll create a `components` directory where we can store lower-level components.
+
 1. Installing and setting up Next.JS with nteract configuration.
 - What tools will we need and why.
 - Best practices we will adopt and why.
