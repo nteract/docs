@@ -9,3 +9,6 @@
 * Documentation Contributor Guide
     * [Overview](doc-contributor/overview.md)
     * [Contributing Components Documentation](doc-contributor/createdoc-components.md)
+    - [Components - Concepts](doc-contributor/components-concepts.md)
+    - [Components - Tasks](doc-contributor/components-tasks.md)
+    - [Reference](doc-contributor/reference.md)
