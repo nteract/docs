@@ -75,6 +75,43 @@ If we visit the webpage, we should see the following.
 
 For our next step, we are going to augment what we have here a little bit more. We'll do this in a couple of steps. First, we'll create a `components` directory where we can store lower-level components.
 
+```
+$ mkdir components
+```
+
+If you visit [nteract play](https://play.nteract.io/), you will see that there are three main elements on our website: the header, the code editor on the left, the output display on the right, and panel under "Show logs". We'll create components for each of these elements.
+
+```
+$ touch components/header.js components/editor.js components/output.js components/logs.js
+```
+
+Great! We'll start off by creating our header component. There are five key elements in the header component: the nteract logo, the "Run" button, the "Show logs" button, the kernel dropdown, and the kernel status indicator.
+
+Let's start by creating a `header` element with the nteract logo aligned to the left.
+
+```
+<header>
+</header>
+```
+
+Next, we'll add the run button to our header component.
+
+Then, we'll add the show/hide logs toggle button.
+
+Next, we'll need to create a dropdown that will allow our users to select the kernel that they would like to connect to.
+
+Finally, we'll need to create an indicator for the kernel status.
+
+Now that we've completed the `Header` components, we'll need to create the editor component. This is where the nteract ecosystem will shine! The `@nteract/editor` package will do a lot of the heavy lifting here, so we'll start by adding it as an import at the top of our file.
+
+```
+import CodeMirrorEditor from "@nteract/editor";
+```
+
+Then, we'll put the `CodeMirrorEditor` component to work.
+
+Next, we'll need to create a components to display our Outputs. The nteract ecosystem will do a lot of the heavy lifting here too. We'll leverage the `@nteract/presentational-components` and `@nteract/display-area` packages.
+
 1. Installing and setting up Next.JS with nteract configuration.
 - What tools will we need and why.
 - Best practices we will adopt and why.
