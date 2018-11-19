@@ -110,7 +110,34 @@ import CodeMirrorEditor from "@nteract/editor";
 
 Then, we'll put the `CodeMirrorEditor` component to work.
 
-Next, we'll need to create a components to display our Outputs. The nteract ecosystem will do a lot of the heavy lifting here too. We'll leverage the `@nteract/presentational-components` and `@nteract/display-area` packages.
+Next, we'll need to create a components to display our Outputs. The nteract ecosystem will do a lot of the heavy lifting here too. We'll leverage the `@nteract/presentational-components` and `@nteract/display-area` pa
+
+Now that we've generated the basic user interface for our application. We'll need to add some functionality to it. We'll start with the first step, adding the ability to connect to a kernel.
+
+We'll start by creating a redux store to represent the information that we would like to hold about the state of our application.
+
+We'll also need to generate the initial state for our redux application.
+
+Now that we've got our store and initial state setup, we'll start by invoking the actions that we'd like to use in places where it is appropriate and work from their.
+
+We'll start by adding the code to initialize a kernel connection in our main index page.
+
+Next.JS provides a special static method called `getInitialProps` that is 
+
+Inside this method, we'll start by 
+
+The `detectPlatform` function is a utility function that allows us to determine what operating system the user is on. This will allow us to render operating system-specific help indicators.
+
+The `initializeFromQuery` action will be used to. We'll create an action creator for it in our `redux/actions.js` file.
+
+We'll add the reducers associated with these actions to the `redux/reducer.js` folder.
+
+Next, we'll add the functions that will be used to initialize our connection to the kernel.
+
+In our `initializeFromQuery` function, we intialized the git repository taht we would like to reference.
+
+
+
 
 1. Installing and setting up Next.JS with nteract configuration.
 - What tools will we need and why.
