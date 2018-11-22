@@ -118,6 +118,39 @@ We'll start by creating a redux store to represent the information that we would
 
 We'll also need to generate the initial state for our redux application.
 
+Once we've set up this initial state, we will also need to create reducers that are associated with each part of our state.
+
+Our state roughly looks like this,
+
+```
+{
+  ui: {
+    repo,
+    gitref,
+    source,
+    showPanel,
+    currentServerId,
+    platform,
+    currentKernelName,
+    codeMirrorMode
+  },
+  entities: {
+    serversById
+  }
+}
+```
+
+Here's a rough overview of what each part of our state will be used for and a sneak peak of what we will be building in the rest of the tutorial.
+
+- ui.repo: The 
+- ui.gitref:
+- ui.source: The source code that is contained within the editor element that the user provided.
+- ui.showPanel: Whether or not to show the Binder logs drawer.
+- ui.currentServerId: A reference to the current Binder isntance that we are connected to.
+- ui.platform: The operating system that we are on to create OS-specific tooltips and help text.
+- ui.codeMirrorMode: The language that we would like to use in our code editor, defaults to Python.
+- entities.serversById:
+
 Now that we've got our store and initial state setup, we'll start by invoking the actions that we'd like to use in places where it is appropriate and work from their.
 
 We'll start by adding the code to initialize a kernel connection in our main index page.
@@ -134,46 +167,199 @@ We'll add the reducers associated with these actions to the `redux/reducer.js` f
 
 Next, we'll add the functions that will be used to initialize our connection to the kernel.
 
-In our `initializeFromQuery` function, we intialized the git repository taht we would like to reference.
+In our `initializeFromQuery` function, we initialized the git repository that we would like to reference. Now we need to initialize a kernel based on this information.
+
+We will do this by invoking the `activateServer` function in our `componentDidMOunt` which will initialize the connection on page load.
+
+First, we will create a `makeServerId` utility function that we will use to create a server id. The nteract ecosystem will help us here as well as we will be using the `rx-binder` package.
+
+We will pass all this information to the activateeServer action. We'll start by defining the action for this in our actions.js file.
+
+We'll define the code that will be executed when this action is called in our reducer.js file.
+
+This will pipe over to the activateServerEpic which will initiate the connection to Binder.
+
+Now that we've got a connection to the kernel initiated, we'll set up the actions that occur during different events in the lifecycle of the app.
+
+Let's create a `handleSourceSubmit` function that will be invoked when the user clicks the "Run" button. 
 
 
+```
+handleSourceSubmit = () => {
+  const { currentServerId, currentKernelName, runSource } = this.props;
+  const { sourceValue: source } = this.state;
+  runSource({
+    serverId: currentServerId,
+    kernelName: currentKernelName,
+    source
+  });
+};
+```
+
+The `runSource` function is mapped from our actions.
+
+```
+export const runSource = (payload: {
+  serverId: string,
+  kernelName: string,
+  source: string
+}) => ({
+  type: actionTypes.RUN_SOURCE,
+  payload
+});
+```
+
+We'll create a `runSourceEpic` that sends an execution request to the kernel that we are connected to.
+
+```
+const runSourceEpic = (action$, state$) =>
+  action$.pipe(
+    ofType(actionTypes.RUN_SOURCE),
+    mergeMap(({ payload: { serverId, kernelName, source } }) => {
+      const channelPath = [
+        "entities",
+        "serversById",
+        serverId,
+        "server",
+        "activeKernelsByName",
+        kernelName,
+        "kernel",
+        "channel"
+      ];
+      const channel = objectPath.get(state$.value, channelPath);
+      if (channel) {
+        channel.next(executeRequest(source));
+      }
+      return of(
+        actions.clearKernelOutputs({ serverId, kernelName }),
+        actions.setSource(source)
+      );
+    })
+  );
+```
+
+Next, we'll add a `handleKernelChange` that will be executed whenever the user changes the language of the kernel that they are connected to via the dropdown.
+
+This handler will be associated with the `setActiveKernel` action. We'll define the action for this in our actions.js file.
+
+```
+export const setActiveKernel = (payload: {
+  serverId: string,
+  kernelName: string
+}) => ({
+  type: actionTypes.SET_ACTIVE_KERNEL,
+  payload
+});
+```
+
+Then we'll create a `setActiveKernelEpic` method.
+
+```
+const setActiveKernelEpic = (action$, state$) =>
+  action$.pipe(
+    ofType(actionTypes.SET_ACTIVE_KERNEL),
+    mergeMap(({ payload: { serverId, kernelName } }) => {
+      const channelPath = [
+        "entities",
+        "serversById",
+        serverId,
+        "server",
+        "activeKernelsByName",
+        kernelName,
+        "kernel",
+        "channel"
+      ];
+      const channel = objectPath.get(state$.value, channelPath);
+      const actionsArray = [actions.setCurrentKernelName(kernelName)];
+      if (!channel) {
+        actionsArray.push(actions.activateKernel({ serverId, kernelName }));
+      }
+      // $FlowFixMe
+      return of(...actionsArray);
+    })
+  );
+```
+
+We'll also need to create some functions that will apply changes to the git refs and repos when they are modified by the user. We'll create the handlers in the appropriate components.
+
+```
+  handleRepoChange = event => {
+    this.setState({ repoValue: event.target.value });
+  };
+  handleGitrefChange = event => {
+    this.setState({ gitrefValue: event.target.value });
+  };
+  ```
+
+  And then we will create 
+
+  ```
+    handleFormSubmit = event => {
+    const {
+      currentServerId: oldServerId,
+      activateServer,
+      submitBinderForm
+    } = this.props;
+    const { gitrefValue: gitref, repoValue: repo } = this.state;
+    event.preventDefault();
+    const serverId = utils.makeServerId({ gitref, repo });
+
+    activateServer({ gitref, repo, serverId, oldServerId });
+    submitBinderForm({ gitref, repo });
+  };
+```
+
+Then we'll create the associated `submitBinderForm` action.
+
+```
+export const submitBinderForm = (payload: {
+  repo: string,
+  gitref: string
+}) => ({
+  type: actionTypes.SUBMIT_BINDER_FORM,
+  payload
+});
+```
+
+Then we'll create the reducers associated with these actions.
+
+```
+const repo = (state = "", action) => {
+  switch (action.type) {
+    case actionTypes.SUBMIT_BINDER_FORM: {
+      return action.payload.repo;
+    }
+    case actionTypes.INITIALIZE_FROM_QUERY: {
+      if (action.payload.repo) {
+        return action.payload.repo;
+      }
+      return state;
+    }
+    default: {
+      return state;
+    }
+  }
+};
+
+const gitref = (state = "", action) => {
+  switch (action.type) {
+    case actionTypes.SUBMIT_BINDER_FORM: {
+      return action.payload.gitref;
+    }
+    case actionTypes.INITIALIZE_FROM_QUERY: {
+      if (action.payload.gitref) {
+        return action.payload.gitref;
+      }
+      return state;
+    }
+    default: {
+      return state;
+    }
+  }
+};
+```
 
 
-1. Installing and setting up Next.JS with nteract configuration.
-- What tools will we need and why.
-- Best practices we will adopt and why.
-2. Creating our presentational components.
-- Setting up Next.JS pages.
-- Creating basic application and UI structure.
-- Building a kernel picker component.
-  - What is a kernel? Explaining protocol documentation.
-- Use nteract's Editor component.
-  - Why is the editor built on codemirror?
-- Using nteract's Output component.
-  - Explaining output formats and types.
-3. Connecting our components to redux.
-- Explaining how redux actions and reducers and epics play together.
-- What is binder and rx-binder?
-- Configuring our redux store.
-  - What will be included in our state and why.
-- Setting up actions and reducers to to connect with server on binder.
-- Setting up epics to connect with server.
-4. Testing our application.
-- Writing tests for our actions and reducers.
-- Writing snapshot tests for our components.
-- Giving our application a test drive.
-5. Deploying our code to now.
-- Creating a zeit account.
-- Setting up our deployment configuration and deploying our app.
+Let's start by setting up an action to update the Redux state whenever the contents of the code editor are updated. We'll create a `handleEditorChange` function.
 
-# Conclusion
 
-Where can you learn more?
-- Redux docs
-- Link to component and pakcage docs.
-- RxJS docs
-- Jupyter specific docs
-
-What you can do next?
-- Try the building a notebook tutorial.
-- Contribute to nteract.
