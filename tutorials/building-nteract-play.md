@@ -13,7 +13,7 @@ If you've gotten up to this part of the tutorial and you're a little confused, y
 
 If you feel ready to move forward, then let's go!
 
-# Body
+### Setting up our application
 
 We’ll get started by setting up our codebase. 
 
@@ -73,6 +73,8 @@ If we visit the webpage, we should see the following.
 
 ![A screenshot of our application with the words nteract play in the top-left corner.](https://cldup.com/GbQ9kSJ1cY.png)
 
+### Creating our components
+
 For our next step, we are going to augment what we have here a little bit more. We'll do this in a couple of steps. First, we'll create a `components` directory where we can store lower-level components.
 
 ```
@@ -112,6 +114,8 @@ Then, we'll put the `CodeMirrorEditor` component to work.
 
 Next, we'll need to create a components to display our Outputs. The nteract ecosystem will do a lot of the heavy lifting here too. We'll leverage the `@nteract/presentational-components` and `@nteract/display-area` pa
 
+### Creating our Redux state and store
+
 Now that we've generated the basic user interface for our application. We'll need to add some functionality to it. We'll start with the first step, adding the ability to connect to a kernel.
 
 We'll start by creating a redux store to represent the information that we would like to hold about the state of our application.
@@ -150,6 +154,8 @@ Here's a rough overview of what each part of our state will be used for and a sn
 - ui.platform: The operating system that we are on to create OS-specific tooltips and help text.
 - ui.codeMirrorMode: The language that we would like to use in our code editor, defaults to Python.
 - entities.serversById:
+
+### Creating our actions
 
 Now that we've got our store and initial state setup, we'll start by invoking the actions that we'd like to use in places where it is appropriate and work from their.
 
@@ -358,7 +364,6 @@ const gitref = (state = "", action) => {
   }
 };
 ```
-
 
 Let's start by setting up an action to update the Redux state whenever the contents of the code editor are updated. We'll create a `handleEditorChange` function.
 
