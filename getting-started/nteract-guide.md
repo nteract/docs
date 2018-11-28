@@ -38,6 +38,8 @@ Papermill is a tool to parameterize notebooks, execute and collect metrics acros
 
 If you've gotten to this point, you're probably aware that the nteract ecosystem offers you a lot of ways to interact with the Jupyter specification. We've created the visualization below to help you get a sense of what the ecosystem provides.
 
+![](../_images/nteract-architecture.png)
+
 ## How can the nteract ecosystem help me?
 
 The nteract ecosystem can help you if you are:
