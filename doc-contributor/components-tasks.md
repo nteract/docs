@@ -83,5 +83,6 @@ file.
 ## Publishing the components documentation
 
 The documentation should after a PR is merged. If it does not,
-please contact Safia, Carol, or Kyle on Slack #docs. For your information,
-the auto-deploy uses Zeit's now project.
+please contact Safia, Carol, or Kyle on Slack() #docs [To join the nteract Slack group, [navigate to the signup page](https://slack.nteract.io).
+
+For your information, auto-deploy of documentation uses Zeit's now project.
