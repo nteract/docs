@@ -18,7 +18,7 @@ We feel that good documentation:
 A few basic steps:
 
 - review this guide
-- say hello on the #docs channel on Slack
+- say hello on the #docs channel on [Slack](https://slack.nteract.io)
 - ask questions on #docs
 - identify an issue labeled "docs" to work on
 
