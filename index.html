@@ -37,14 +37,8 @@
                   "https://github.com/nteract/docs/blob/master/" +
                   vm.route.file;
               }
-              var editHtml = "[:memo: Edit Document](" + url + ")\n";
-              return (
-                editHtml +
-                html +
-                "\n\n----\n\n" +
-                "Last modified {docsify-updated} " +
-                editHtml
-              );
+              var editHtml = "[Edit this page](" + url + ")\n";
+              return html + "\n\n----\n\n" + editHtml;
             });
           }
         ]
