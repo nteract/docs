@@ -1,6 +1,6 @@
 - **Getting Started**
 
-- [A guide to nteract](getting-started/nteract-guide.md)
+  - [A guide to nteract](getting-started/nteract-guide.md)
 
 - **Use nteract**
 
