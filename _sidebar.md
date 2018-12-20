@@ -3,7 +3,7 @@
   - [A guide to nteract](getting-started/nteract-guide.md)
   - [Try the nteract playground](https://play.nteract.io)
   - [Install nteract Desktop](https://nteract.io/desktop)
-  - [Read our Medium blog]()
+  - [Read our blog](https://blog.nteract.io)
 
 - **User Guides**
 
