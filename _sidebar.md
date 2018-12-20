@@ -1,26 +1,35 @@
 - **Getting Started**
 
   - [A guide to nteract](getting-started/nteract-guide.md)
+  - [Try the nteract playground](https://play.nteract.io)
+  - [Install nteract Desktop](https://nteract.io/desktop)
+  - [Read our Medium blog]()
 
-- **nteract Desktop**
+- **User Guides**
 
-  - [Shortcut Keys](desktop/shortcut-keys.md)
+  - [Components](https://components.nteract.io)
+  - [Hydrogen and Atom editor](https://nteract.io/atom)
+  - [Kernels (language runtimes)](https://nteract.io/kernels)
+  - [Keyboard shortcuts](desktop/shortcut-keys.md)
+  - [nteract Desktop](https://nteract.io/desktop)
+  - [nteract Web](user-guides/nteract-web.md)
+  - [Papermill and data workflows](https://papermill.readthedocs.io)
 
-- **Concepts**
+* **Concepts**
 
   - [Kernels and Jupyter Messaging](concepts/kernels.md)
 
-- **Tutorials**
+* **Tutorials**
 
   - [Building nteract-play](tutorials/building-nteract-play.md)
 
-- **Contributor Guide**
+* **Contributor Guide**
 
   - [Developer installation](getting-started/install.md)
   - [Project list](contributor/project-list.md)
   - [Weekly community meeting](contributor/community-meeting.md)
 
-- **Documentation Contributor Guide**
+* **Documentation Contributor Guide**
 
   - [Overview](doc-contributor/overview.md)
   - [Content Style Guide](https://content-guide.nteract.io)
