@@ -1,33 +1,32 @@
-**Getting Started**
+- **Getting Started**
 
 - [A guide to nteract](getting-started/nteract-guide.md)
 
-**Use nteract**
+- **Use nteract**
 
-- nteract Desktop
-  - [Shortcut Keys](desktop/shortcut-keys.md)
-- nteract Web
+  - nteract Desktop
+    - [Shortcut Keys](desktop/shortcut-keys.md)
+  - nteract Web
 
-**Understand nteract**
+- **Understand nteract**
 
-- **Concepts**
+  - **Concepts**
 
-  - [Kernels and the Jupyter Messaging Protocol](concepts/kernels.md)
+    - [Kernels and the Jupyter Messaging Protocol](concepts/kernels.md)
 
-- **Tutorials**
+  - **Tutorials**
 
-  - [Building nteract-play](tutorials/building-nteract-play.md)
+    - [Building nteract-play](tutorials/building-nteract-play.md)
 
-**Contributor Guide**
+- **Contributor Guide**
 
-- [Developer installation](getting-started/install.md)
-- [Project overview](projects/project-cheatsheet.md)
-- [Project list](projects/project-list.md)
+  - [Developer installation](getting-started/install.md)
+  - [Project list](projects/project-list.md)
 
-**Documentation Contributor Guide**
+- **Documentation Contributor Guide**
 
-- [Overview](doc-contributor/overview.md)
-- [Content Style Guide](https://content-guide.nteract.io)
-- [Components - Concepts](doc-contributor/components-concepts.md)
-- [Components - Tasks](doc-contributor/components-tasks.md)
-- [Reference](doc-contributor/reference.md)
+  - [Overview](doc-contributor/overview.md)
+  - [Content Style Guide](https://content-guide.nteract.io)
+  - [Components - Concepts](doc-contributor/components-concepts.md)
+  - [Components - Tasks](doc-contributor/components-tasks.md)
+  - [Reference](doc-contributor/reference.md)
