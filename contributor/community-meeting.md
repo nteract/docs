@@ -2,8 +2,6 @@
 
 Welcome [**nteract**](https://nteract.io) contributors.
 
-## [Weekly Contributor Meeting](https://zoom.us/j/795404957)
-
 **What:** Discuss upcoming work and short-term goals
 
 **When:** Mondays | 9:00 am PDT (UTC-7) | UTC: 16:00
