@@ -1,24 +1,62 @@
-|Feature | Jupyter Lab Default Binding | Notebook Default Binding | nteract Desktop Default Binding | Notes |
-|--------|-----------------------------|--------------------------|---------------------------------|-------|
-|Auto-complete | Tab | Tab | Ctrl + Space |  |
-|Save | Accel+S | S | Ctrl+S |  |
-|Save As | Accel+Shift+S |  | Ctrl+Shift+S |  |
-|editmenu:redo | Ctrl+Shift+Z |  | Ctrl+Shift+Z |  |
-|editmenu:undo | Ctrl+Z |  | Ctrl+Z |  |
-|notebook:undo-cell-action | Z | Z |  | This can undo cell-level actions like a cell delete. Existing github issue - https://github.com/nteract/nteract/issues/1038 |
-| |  |  |  | nteract seems to lack this type of undo. |
-|help:toggle | Ctrl+Shift+H |  |  |  |
-| |  |  |  |  |
-|notebook:move-cursor-down-1 | ArrowDown |  | ArrowDown |  |
-|notebook:move-cursor-down-2 | J | J |  |  |
-|notebook:move-cursor-up-1 | ArrowUp |  | ArrowUp |  |
-|notebook:move-cursor-up-2 | K | K |  |  |
-| |  |  |  |  |
-|notebook:run-cell | Ctrl+Enter | Ctrl+Enter | Ctrl+Enter |  |
-|notebook:run-cell-and-insert-below | Alt+Enter | Alt+Enter |  | nteract's Ctrl+Enter will do this but only in the last cell otherwise it just does "Run Cell and Select Next". Not sure if this is intentionally trying to improve on Jupyter or an accident. |
-|Run Cell and Select Next | Shift+Enter | Shift+Enter | Shift+Enter |  |
-|runmenu:run-all |  |  | Alt+R, A |  |
-| |  |  |  |  |
+# Keyboard Shortcuts
+
+## nteract Desktop
+
+| Feature                          | nteract Desktop                                 |
+|----------------------------------|-------------------------------------------------|
+| Auto-complete                    | Ctrl + Space                                    |
+| Additional information (Python)  | Ctrl + .                                        |
+| **File actions**                 |                                                 |
+| Open                             | Ctrl+O                                          |
+| Save                             | Ctrl+S                                          |
+| Save As                          | Ctrl+Shift+S                                    |
+| **Edit and notebook navigation** |                                                 |
+| Edit menu: redo                  | Ctrl+Shift+Z                                    |
+| Edit menu: undo                  | Ctrl+Z                                          |
+| notebook:copy-cell               | Ctrl+Shift+C (nteract can also drag/drop cells) |
+| notebook:cut-cell                | Ctrl+Shift+X                                    |
+| notebook:delete-cell             | Ctrl+Shift+D                                    |
+| Paste Cell(s) Below              | Ctrl+Shift+V                                    |
+|                                  |                                                 |
+| notebook:change-cell-to-code     | Ctrl+Shift+Y                                    |
+| notebook:change-cell-to-markdown | Ctrl+Shift+M                                    |
+| Run Cell and Select Next         | Shift+Enter                                     |
+| Cell menu: run-all               | Alt+R, A                                        |
+| Notebook: move-cursor-down-1     | ArrowDown                                       |
+| Notebook: move-cursor-up-1       | ArrowUp                                         |
+| Notebook: run-cell               | Ctrl+Enter                                      |
+| notebook:insert-cell-above       | Ctrl+Shift+A                                    |
+| notebook:insert-cell-below       | Ctrl+Shift+B                                    |
+| **Runtime kernel actions**       |                                                 |
+| Interrupt Kernel                 | Alt+R, I                                        |
+| Shutdown Kernel                  | Alt+R, K                                        |
+| Restart Kernel                   | Alt+R, R                                        |
+| Restart Kernel and Clear         | Alt+R, C                                        |
+| Restart Kernel and Run All       | Alt+R, A                                        |
+
+## Bindings and Comparison with JupyterLab and Classic Jupyter Notebook
+
+| Feature                            | Jupyter Lab Default Binding | Notebook Default Binding | nteract Desktop Default Binding | Notes                                                                                                                                                                                         |
+|------------------------------------|-----------------------------|--------------------------|---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Auto-complete                      | Tab                         | Tab                      | Ctrl + Space                    |                                                                                                                                                                                               |
+| Save                               | Accel+S                     | S                        | Ctrl+S                          |                                                                                                                                                                                               |
+| Save As                            | Accel+Shift+S               |                          | Ctrl+Shift+S                    |                                                                                                                                                                                               |
+| editmenu:redo                      | Ctrl+Shift+Z                |                          | Ctrl+Shift+Z                    |                                                                                                                                                                                               |
+| editmenu:undo                      | Ctrl+Z                      |                          | Ctrl+Z                          |                                                                                                                                                                                               |
+| notebook:undo-cell-action          | Z                           | Z                        |                                 | This can undo cell-level actions like a cell delete. Existing github issue - https://github.com/nteract/nteract/issues/1038                                                                   |
+|                                    |                             |                          |                                 | nteract seems to lack this type of undo.                                                                                                                                                      |
+| help:toggle                        | Ctrl+Shift+H                |                          |                                 |                                                                                                                                                                                               |
+|                                    |                             |                          |                                 |                                                                                                                                                                                               |
+| notebook:move-cursor-down-1        | ArrowDown                   |                          | ArrowDown                       |                                                                                                                                                                                               |
+| notebook:move-cursor-down-2        | J                           | J                        |                                 |                                                                                                                                                                                               |
+| notebook:move-cursor-up-1          | ArrowUp                     |                          | ArrowUp                         |                                                                                                                                                                                               |
+| notebook:move-cursor-up-2          | K                           | K                        |                                 |                                                                                                                                                                                               |
+|                                    |                             |                          |                                 |                                                                                                                                                                                               |
+| notebook:run-cell                  | Ctrl+Enter                  | Ctrl+Enter               | Ctrl+Enter                      |                                                                                                                                                                                               |
+| notebook:run-cell-and-insert-below | Alt+Enter                   | Alt+Enter                |                                 | nteract's Ctrl+Enter will do this but only in the last cell otherwise it just does "Run Cell and Select Next". Not sure if this is intentionally trying to improve on Jupyter or an accident. |
+| Run Cell and Select Next           | Shift+Enter                 | Shift+Enter              | Shift+Enter                     |                                                                                                                                                                                               |
+| runmenu:run-all                    |                             |                          | Alt+R, A                        |                                                                                                                                                                                               |
+|                                    |                             |                          |                                 |                                                                                                                                                                                               |
 |In this section nteract requires multi-keystroke nav through the menus rather than a single shortcut key. In many cases we could add the shortcut key though value feels very marginal. |
 |Interrupt Kernel | I, I | I, I | Alt+R, I | Not sure this works w/ Almond |
 |Shutdown Kernel |  |  | Alt+R, K | Could add Ctrl+K. But Jupyter doesn't have a default binding here so only makes sense if we're doing the whole menu for consistency. Then we end up eating up a bunch of bindings that might be more useful for other things in the future (TBC, long term, would love to see user/admin-configurable bindings, but we aren't there yet). |
