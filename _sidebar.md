@@ -2,26 +2,23 @@
 
   - [A guide to nteract](getting-started/nteract-guide.md)
 
-- **Use nteract**
+- **nteract Desktop**
 
-  - nteract Desktop
-    - [Shortcut Keys](desktop/shortcut-keys.md)
-  - nteract Web
+  - [Shortcut Keys](desktop/shortcut-keys.md)
 
-- **Understand nteract**
+- **Concepts**
 
-  - **Concepts**
+  - [Kernels and Jupyter Messaging](concepts/kernels.md)
 
-    - [Kernels and the Jupyter Messaging Protocol](concepts/kernels.md)
+- **Tutorials**
 
-  - **Tutorials**
-
-    - [Building nteract-play](tutorials/building-nteract-play.md)
+  - [Building nteract-play](tutorials/building-nteract-play.md)
 
 - **Contributor Guide**
 
   - [Developer installation](getting-started/install.md)
-  - [Project list](projects/project-list.md)
+  - [Project list](contributor/project-list.md)
+  - [Weekly community meeting](contributor/community-meeting.md)
 
 - **Documentation Contributor Guide**
 

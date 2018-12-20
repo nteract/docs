@@ -1,4 +1,4 @@
-# Active Projects for [nteract](https://github.com/nteract)
+# Active Projects
 
 Date updated: 2018-10-25
 
@@ -11,13 +11,13 @@ Date updated: 2018-10-25
 
 ## Productivity and teamwork
 
-| Project Management and Planning                               | Marketing, Communications, and Public Relations                                     | Documentation                                               |
-| ------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------- |
-| [meeting-minutes](https://github.com/nteract/meeting-minutes) | [assets](https://github.com/nteract/assets)                                         | [desktop-manual](https://github.com/nteract/desktop-manual) |
-| _roadmap_ (google doc)                                        | [design](https://github.com/nteract/design)                                         | [docs](https://github.com/nteract/docs)                     |
-| [specs](https://github.com/nteract/specs)                     | [logos](https://github.com/nteract/logos)                                           | [docs-old](https://github.com/nteract/docs-old) - DEPRECATED          |
-| [global-sprint](https://github.com/nteract/global-sprint)     | [nteract-monthly-newsletter](https://github.com/nteract/nteract-monthly-newsletter) | [examples](https://github.com/nteract/examples)         |
-| [iniatives](https://github.com/nteract/iniatives)             | [nteract.io](https://github.com/nteract/nteract.io)                                 |            |
+| Project Management and Planning                               | Marketing, Communications, and Public Relations                                     | Documentation                                                |
+|---------------------------------------------------------------|-------------------------------------------------------------------------------------|--------------------------------------------------------------|
+| [meeting-minutes](https://github.com/nteract/meeting-minutes) | [assets](https://github.com/nteract/assets)                                         | [desktop-manual](https://github.com/nteract/desktop-manual)  |
+| _roadmap_ (google doc)                                        | [design](https://github.com/nteract/design)                                         | [docs](https://github.com/nteract/docs)                      |
+| [specs](https://github.com/nteract/specs)                     | [logos](https://github.com/nteract/logos)                                           | [docs-old](https://github.com/nteract/docs-old) - DEPRECATED |
+| [global-sprint](https://github.com/nteract/global-sprint)     | [nteract-monthly-newsletter](https://github.com/nteract/nteract-monthly-newsletter) | [examples](https://github.com/nteract/examples)              |
+| [iniatives](https://github.com/nteract/iniatives)             | [nteract.io](https://github.com/nteract/nteract.io)                                 |                                                              |
 
 ---
 
