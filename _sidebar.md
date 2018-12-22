@@ -14,6 +14,7 @@
   - [nteract Desktop](https://nteract.io/desktop)
   - [nteract Web](user-guides/nteract-web.md)
   - [Papermill and data workflows](https://papermill.readthedocs.io)
+  - [scrapbook](https://nteract-scrapbook.readthedocs.io)
 
 * **Concepts**
 
