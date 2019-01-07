@@ -7,6 +7,10 @@
 
 - **User Guides**
 
+  - [How to use nteract](user-guides/how-to-use-nteract.md)
+
+- **Useful Links**
+
   - [Components](https://components.nteract.io)
   - [Hydrogen and Atom editor](https://nteract.io/atom)
   - [Kernels (language runtimes)](https://nteract.io/kernels)
