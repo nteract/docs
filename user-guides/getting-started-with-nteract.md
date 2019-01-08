@@ -1,14 +1,26 @@
-# How to use nteract
+# Getting started with nteract
 
 Interactive notebooks are a great tool for data scientists looking to document their code, experiment with models, generate visualizations, and prototype code. The most popular interactive notebook format in the data science ecosystem is the Jupyter notebook format.
 
 ### Setting up the nteract desktop application
 
-The fastest way to get started with nteract is to download the desktop application to your machine. You can download the installer for your operating system on the [nteract homepage](https://nteract.io/desktop).
+The fastest way to get started with nteract is to download the desktop application to your machine. You can download the installer for your operating system on the [nteract homepage](https://nteract.io/desktop). Once you've downloaded and installed nteract, you can launch the program from the install directory. Note that this guide assumes you are using the nteract desktop application.
 
 ### Setting up the nteract web application
 
-In addition to using nteract on the desktop, you can also use nteract within your web browser. 
+In addition to using nteract on the desktop, you can also use nteract within your web browser. To do so, you'll need to install the `nteract_on_jupyter` Python package using the following command.
+
+```bash
+$ pip install nteract_on_jupyter
+```
+
+Then, run Jupyter with the nteract extension installed using the following command.
+
+```bash
+$ jupyter nteract
+```
+
+Your default browser should open to the nteract web interface where you can open, create, and edit notebooks.
 
 ### How to create a new notebook
 

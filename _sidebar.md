@@ -7,7 +7,7 @@
 
 - **User Guides**
 
-  - [How to use nteract](user-guides/how-to-use-nteract.md)
+  - [Getting started with nteract](user-guides/getting-started-with-nteract.md)
 
 - **Useful Links**
 
