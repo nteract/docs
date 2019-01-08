@@ -8,7 +8,7 @@ nteract is an ecosystem of React components, JavaScript packages, and applicatio
 
 1. Use [papermill](https://github.com/nteract/papermill) to parameterize and execute notebooks.
 2. Use our React components to build your own interactive notebook application.
-3. Use [commuter](https://github.com/nteract/nteract/tree/master/applications/commuter) to host notebooks.
+3. Use [commuter](https://github.com/nteract/commuter) to host notebooks.
 
 ### Helpful Links
 1. [nteract GitHub monorepo](https://github.com/nteract/nteract)
