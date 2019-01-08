@@ -1,6 +1,6 @@
 # Getting started with nteract
 
-Interactive notebooks are a great tool for data scientists looking to document their code, experiment with models, generate visualizations, and prototype code. The most popular interactive notebook format in the data science ecosystem is the Jupyter notebook format.
+Interactive notebooks are a great tool for data scientists, hobbyists, and programmers looking to document their code, experiment with models, generate visualizations, and prototype code. The Jupyter notebook format is one of the most popular interactive notebook formats and is supported by the nteract ecosystem. This user guide will help you get set up with the basics of the nteract application.
 
 ### Setting up the nteract desktop application
 
@@ -28,11 +28,11 @@ Depending on your preference, you can create a new notebook in nteract in multip
 
 If you're comfortable with the command line, you can use the `nteract` command to create or open a notebook from the command line.
 
-Altneratively, you can open a notebook by either double clicking on the notebook file anywhere on your machine or selecting File > Open from the nteract menubar.
+Alternatively, you can open a notebook by either double clicking on the notebook file anywhere on your machine or selecting File > Open from the nteract menubar.
 
 ### Writing code in interactive notebooks
 
-Now that we've got the nteract application installed, we can create our first notebook. New notbooks in nteract launch with a an empty code cell. You can use this code cell to write code that can be executed. Code must be written in the language of the kernel that you are connected to in order to execute. For example, the example below shows Python 3 code executing within an interactive notebook.
+Now that we've got the nteract application installed, we can create our first notebook. New notebooks in nteract launch with an empty code cell. You can use this code cell to write code that can be executed. Code must be written in the language of the kernel that you are connected to in order to execute. For example, the example below shows Python 3 code executing within an interactive notebook.
 
 ![Executing a Python code cell within a notebook](https://cldup.com/6RzV6bYyKa.gif)
 
@@ -46,7 +46,7 @@ Once the new Markdown cell has been created, you can double click to edit the Ma
 
 ### Organizing cells within a notebook
 
-Like any written document, the organization of the content matters. nteract allows you to rearrange the cells within a notebook using drag-and-drop. You can click on the left hand side of a cell and drag it to the desired position.
+Like any written document, the organization of the content matters. nteract allows you to rearrange the cells within a notebook using drag-and-drop. You can click on the left-hand side of a cell and drag it to the desired position.
 
 ![Using drag and drop to rearrange cells in a notebook](https://cldup.com/HgCrZl9zXW.gif)
 
@@ -62,7 +62,7 @@ One of the most powerful features of notebooks is the ability to render rich med
 
 ### Creating visualizations with the nteract Data Explorer
 
-The nteract Data Explorer is a built-in tool for visualizing pandas DataFrames within a notebook. To see an example of the Data Explorer in action, navigate to File > Open Example Notebook > python > Try the Data Explorer. By default, the Data Explorer renders the data in a rich, paginated table table.
+The nteract Data Explorer is a built-in tool for visualizing pandas DataFrames within a notebook. To see an example of the Data Explorer in action, navigate to File > Open Example Notebook > python > Try the Data Explorer. By default, the Data Explorer renders the data in a rich, paginated table.
 
 ![Data rendered in a rich table within the nteract Data Explorer](https://cldup.com/-0UimYM3wH.png)
 
