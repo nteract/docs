@@ -1,6 +1,6 @@
 # Getting started with nteract
 
-Interactive notebooks are a great tool for data scientists, hobbyists, and programmers looking to document their code, experiment with models, generate visualizations, and prototype code. The Jupyter notebook format is one of the most popular interactive notebook formats and is supported by the nteract ecosystem. This user guide will help you get set up with the basics of the nteract application.
+Interactive notebooks are a great tool for data scientists, hobbyists, and programmers looking to document their code, experiment with models, generate visualizations, and prototype code. The Jupyter notebook format is one of the most popular interactive notebook formats and is supported by the nteract ecosystem. This user guide will help you get set up with the basics of the nteract notebook app.
 
 ### Setting up the nteract desktop application
 
@@ -24,9 +24,11 @@ Your default browser should open to the nteract web interface where you can open
 
 ### How to create a new notebook
 
-Depending on your preference, you can create a new notebook in nteract in multiple ways.
+The nteract app opens to a new, empty notebook by default. If you're comfortable with the command line, you can use the `nteract` command to create or open a notebook from the command line.
 
-If you're comfortable with the command line, you can use the `nteract` command to create or open a notebook from the command line.
+```
+$ nteract --kernel ${insert kernel name here}
+```
 
 Alternatively, you can open a notebook by either double clicking on the notebook file anywhere on your machine or selecting File > Open from the nteract menubar.
 
@@ -52,7 +54,7 @@ Like any written document, the organization of the content matters. nteract allo
 
 ### Speed things up with keyboard shortcuts
 
-As you use notebooks more and more, you'll probably want to start taking advantage of some of the keyboard shortcuts that are provided within nteract. You can view a full list of these keyboard shortcuts, and how they compare to those provided within the JupyterLab and classic Jupyter front ends [here](https://docs.nteract.io/#/desktop/shortcut-keys).
+As you use notebooks more and more, you'll probably want to start taking advantage of some of the keyboard shortcuts that are provided within nteract. You can view [a full list of these keyboard shortcuts](https://docs.nteract.io/#/desktop/shortcut-keys), and how they compare to those provided within the JupyterLab and classic Jupyter front ends to get started with these keyboard shortcuts.
 
 ### Rendering rich media in interactive notebooks
 
@@ -69,5 +71,7 @@ The nteract Data Explorer is a built-in tool for visualizing pandas DataFrames w
 Using the buttons on the right of the Data Explorer, you can switch to different views of the same data. For example, here's the data from the table categorized and filtered into a bar plot.
 
 ![The nteract Data Explorer rendering a customized bar plot](https://cldup.com/54aF-NFjS3.png)
+
+### Go forth and explore!
 
 At this point, you're hopefully excited about all the notebooks you can create using nteract. You can view some of the example notebooks to view the possibilities that are available to you with nteract. You can open the example notebooks by selecting File > Open Example Notebook from the nteract menubar.
