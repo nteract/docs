@@ -8,6 +8,7 @@
 - **User Guides**
 
   - [Getting started with nteract](user-guides/getting-started-with-nteract.md)
+  - [Creating data visualizations in nteract](user-guides/creating-data-visualizations-in-nteract.md)
 
 - **Useful Links**
 
